@@ -1,0 +1,21 @@
+{
+  "name": "WhatsAppStats",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/azizkag/WhatsAppStats.git"
+  },
+  "author": "azizkag",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/azizkag/WhatsAppStats/issues"
+  },
+  "dependencies": {
+    "express": "~4.12.3"
+  }
+}
