@@ -5,10 +5,3 @@ block content
   p Welcome to #{title}
   p This is #{vars}
 
-  div.loginbox
-    form(id="uploadForm", enctype="multipart/form-data", action="/api/photos", method="post")
-      input(type="file", name="userFile", id="userPhotoInput")
-
-  span(id="status")
-  img(id="uploadedImage")
-

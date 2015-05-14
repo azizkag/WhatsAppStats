@@ -4,9 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var multer = require('multer');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+
+//require file uploader
+var uploads = require('./routes/uploads');
 
 var app = express();
 
@@ -22,8 +26,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(multer({
+    dest: "./uploads/"
+}));
+
 app.use('/', routes);
 app.use('/users', users);
+
+//route for file uploads
+app.use("/uploads", uploads);
+
+app.get('/example/a', function (req, res) {
+  res.send('Hello from A!');
+});
+
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,3 +77,11 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+
+
+
+
+
+
+
