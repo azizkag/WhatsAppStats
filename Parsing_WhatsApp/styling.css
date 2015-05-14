@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+    margin: 50px;
+}
+
+.block {
+	padding: 10px;
+	background-color: white;
+	border: 2px solid;
+    border-radius: 25px;
+    margin: 5px;
+
+}
+
+.sender{
+	color: blue;
+}
+
+.time {
+	font-size: 9pt;
+	color: grey;
+}
