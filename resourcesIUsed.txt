@@ -1,0 +1,3 @@
+resources i used: 
+
+http://www.e-zest.net/blog/how-to-handle-file-upload-with-node-and-express-4-0/

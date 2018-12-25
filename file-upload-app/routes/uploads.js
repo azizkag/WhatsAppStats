@@ -4,7 +4,7 @@ var util = require("util");
 var fs = require("fs"); 
  
 router.get('/', function(req, res) { 
-  res.render("uploadPage", {title: "I love files!"}); 
+  res.render("uploadPage", {title: "What'sApp Group Chat Analysis Platform"}); 
 }); 
  
 router.post("/upload", function(req, res, next){ 
